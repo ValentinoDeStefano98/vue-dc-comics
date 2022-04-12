@@ -8,29 +8,35 @@
 </template>
 
 <script>
+import image1 from '../assets/img/buy-comics-digital-comics.png';
+import image2 from '../assets/img/buy-comics-merchandise.png';
+import image3 from '../assets/img/buy-comics-subscriptions.png';
+import image4 from '../assets/img/buy-comics-shop-locator.png';
+import image5 from '../assets/img/buy-dc-power-visa.svg';
+
 export default {
     name: 'MainBottom',
     data(){
         return{
             menuImg: [
                 {
-                    img: '../assets/img/buy-comics-digital-comics.png',
+                    img: image1,
                     title: 'Digital Comics'
                 },
                 {
-                    img: '../assets/img/buy-comics-merchandise.png',
+                    img: image2,
                     title: 'DC Merchandise'
                 },
                 {
-                    img: '../assets/img/buy-comics-subscriptions.png',
+                    img: image3,
                     title: 'Subscriptions'
                 },
                 {
-                    img: '../assets/img/buy-comics-shop-locator.png',
+                    img: image4,
                     title: 'Comic Shop Locator'
                 },
                 {
-                    img: '../assets/img/buy-dc-power-visa.svg',
+                    img: image5,
                     title: 'DC Power Visa'
                 },
             ]

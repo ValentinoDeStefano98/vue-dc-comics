@@ -10,6 +10,10 @@
       <MainTop/>
       <MainBottom/>
     </main>
+
+    <footer>
+      <FooterTop/>
+    </footer>
     
   </div>
 </template>
@@ -19,6 +23,7 @@ import LogoComponent from './components/LogoComponent.vue'
 import HeaderNavComponent from './components/HeaderNavComponent.vue'
 import MainTop from './components/MainTop.vue'
 import MainBottom from './components/MainBottom.vue'
+import FooterTop from './components/FooterTop.vue'
 
 export default {
   name: 'App',
@@ -27,6 +32,7 @@ export default {
    HeaderNavComponent,
    MainTop,
    MainBottom,
+   FooterTop,
   }
 }
 </script>
