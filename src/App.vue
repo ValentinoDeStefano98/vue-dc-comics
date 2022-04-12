@@ -8,6 +8,7 @@
 
     <main>
       <MainTop/>
+      <MainBottom/>
     </main>
     
   </div>
@@ -17,6 +18,7 @@
 import LogoComponent from './components/LogoComponent.vue'
 import HeaderNavComponent from './components/HeaderNavComponent.vue'
 import MainTop from './components/MainTop.vue'
+import MainBottom from './components/MainBottom.vue'
 
 export default {
   name: 'App',
@@ -24,6 +26,7 @@ export default {
    LogoComponent,
    HeaderNavComponent,
    MainTop,
+   MainBottom,
   }
 }
 </script>
