@@ -5,6 +5,10 @@
       <LogoComponent/>
       <HeaderNavComponent/>
     </header>
+
+    <main>
+      <MainTop/>
+    </main>
     
   </div>
 </template>
@@ -12,12 +16,14 @@
 <script>
 import LogoComponent from './components/LogoComponent.vue'
 import HeaderNavComponent from './components/HeaderNavComponent.vue'
+import MainTop from './components/MainTop.vue'
 
 export default {
   name: 'App',
   components: {
    LogoComponent,
    HeaderNavComponent,
+   MainTop,
   }
 }
 </script>
@@ -30,8 +36,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  max-width: 1440px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -41,5 +46,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
