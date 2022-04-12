@@ -16,7 +16,7 @@
             </div>           
             </div>
             <div class="footerLogoContainer">
-
+                <FootersLogo/>
             </div>
         </div>
         
@@ -29,6 +29,7 @@ import DcComicsComponent from './FootersComponent/DcComicsComponent.vue'
 import ShopComponent from './FootersComponent/ShopComponent.vue'
 import DcComponent from './FootersComponent/DcComponent.vue'
 import SitesComponent from './FootersComponent/SitesComponent.vue'
+import FootersLogo from './FootersComponent/FootersLogo.vue'
 
 export default {
     name: 'FooterTop',
@@ -36,7 +37,8 @@ export default {
         DcComicsComponent,
         ShopComponent,
         DcComponent,
-        SitesComponent
+        SitesComponent,
+        FootersLogo
     }
 }
 </script>
