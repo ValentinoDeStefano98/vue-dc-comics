@@ -1,9 +1,12 @@
 <template>
     <div class="bottom">
-        <div v-for="(element, index) in menuImg" :key="index" class="container">
-            <img :src="`${element.img}`" alt="immagine">
-            <h3> {{element.title}} </h3>
+        <div class="bigContainer">
+            <div v-for="(element, index) in menuImg" :key="index" class="container">
+                <img :src="`${element.img}`" alt="immagine">
+                <h3> {{element.title}} </h3>
         </div>
+        </div>
+        
     </div>
 </template>
 
@@ -12,7 +15,7 @@ import image1 from '../assets/img/buy-comics-digital-comics.png';
 import image2 from '../assets/img/buy-comics-merchandise.png';
 import image3 from '../assets/img/buy-comics-subscriptions.png';
 import image4 from '../assets/img/buy-comics-shop-locator.png';
-import image5 from '../assets/img/buy-dc-power-visa.svg';
+import image5 from '../assets/img/buy-dc-power-visa.png';
 
 export default {
     name: 'MainBottom',
@@ -49,14 +52,27 @@ export default {
 .bottom{
     color: white;
     background-color: #0282F9;
+    
+}
+
+.bigContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 .container{
+    padding: 30px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 img{
-    max-width: 3%;
+    width:55px;
+    margin-right: 15px;
 }
 </style>
