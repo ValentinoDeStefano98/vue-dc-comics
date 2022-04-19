@@ -1,10 +1,9 @@
 <template>
     <div>
        <ul>
-           <li v-for="(element, index) in menuNav" :key="index" v-on:click="active">
+           <li v-for="(element, index) in menuNav" :key="index" @click="makeActive" :class="{'red': isActive}">
                <a :href="`${element.url}`"> {{ element.title }} </a>
            </li>
-
        </ul>
     </div>
 </template>
@@ -55,9 +54,15 @@ export default {
                     title: 'Group',
                     url: '#'
                 },
-            ]
+            ],
+            isActive: false,
         }
-    }
+    },
+    methods:{
+        makeActive: function(){
+            this.isActive = true;
+        }
+    } 
 }
 </script>
 
