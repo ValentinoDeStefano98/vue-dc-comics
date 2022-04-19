@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>DC</h3>
+        <h3>Sites</h3>
         <ul>
             <li v-for="(element, index) in menuSites" :key='index'>
                 <a :href="`${element.url}`"> {{ element.name }}</a>
@@ -45,20 +45,20 @@ export default {
 
 h3{
     color: white;
-}
-
-ul{
-    padding-inline-start: 0;
-    margin-block-start: 0;
+    padding: 20px 15px;
+    text-align: start;
+    text-transform: uppercase;
 }
 
 li{
     list-style-type: none;
     margin: 0 15px;
+    text-align: start;
+    
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: lightgray;
 }
 </style>

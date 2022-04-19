@@ -64,5 +64,6 @@ header{
   background-color: white;
   width: 80%;
   margin: 0 auto;
+  padding: 15px 0;
 }
 </style>

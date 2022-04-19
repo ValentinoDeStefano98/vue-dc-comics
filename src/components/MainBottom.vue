@@ -56,7 +56,7 @@ export default {
 }
 
 .bigContainer{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ export default {
 }
 
 img{
-    width:55px;
+    width: 55px;
     margin-right: 15px;
 }
 </style>

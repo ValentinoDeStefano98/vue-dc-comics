@@ -1,7 +1,7 @@
 <template>
     <div>
        <ul>
-           <li v-for="(element, index) in menuNav" :key="index">
+           <li v-for="(element, index) in menuNav" :key="index" v-on:click="active">
                <a :href="`${element.url}`"> {{ element.title }} </a>
            </li>
 
@@ -69,10 +69,17 @@ ul{
 li{
     list-style-type: none;
     margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.active{
+    color: #0282F9;
+    border-block-end: 1px solid black;
 }
 </style>

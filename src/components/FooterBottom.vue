@@ -2,7 +2,7 @@
     <div class="bigContainer">
         <div class="flexContainer">
             <div class="buttonContainer">
-                <button> <a href="#">Sign-up Now!</a> </button>
+                <a class="signUpButton" href="#">Sign-up Now!</a>
             </div>
 
             <div class="socialContainer">
@@ -51,5 +51,16 @@ export default {
 .followButton{
     color: #2658CB;
     padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.signUpButton{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #2658CB;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
 </style>

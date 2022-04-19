@@ -57,6 +57,7 @@ export default {
 }
 
 .linkContainer{
+    padding: 20px 0;
     height: 400px;
     display: flex;
     flex-direction: column;
