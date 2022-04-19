@@ -1,8 +1,35 @@
 <template>
     <div>
        <ul>
-           <li v-for="(element, index) in menuNav" :key="index" @click="makeActive" :class="{'red': isActive}">
-               <a :href="`${element.url}`"> {{ element.title }} </a>
+           <li>
+               <a class="active" href="#">Characters</a>
+           </li>
+           <li>
+               <a href="#"> Comics </a>
+           </li>
+           <li>
+               <a href="#"> Movies </a>
+           </li>
+           <li>
+               <a href="#"> TV </a>
+           </li>
+           <li>
+               <a href="#"> Games </a>
+           </li>
+           <li>
+               <a href="#"> Collectibles </a>
+           </li>
+           <li>
+               <a href="#"> Videos </a>
+           </li>
+           <li>
+               <a href="#"> Fans </a>
+           </li>
+           <li>
+               <a href="#"> News </a>
+           </li>
+           <li>
+               <a href="#"> Group </a>
            </li>
        </ul>
     </div>
@@ -12,56 +39,8 @@
 export default {
     name: 'HeaderNavComponent',
     data(){
-        return{
-            menuNav: [
-                {
-                    title: 'Characters',
-                    url: '#'
-                },
-                {
-                    title: 'Comics',
-                    url: '#'
-                },
-                {
-                    title: 'Movies',
-                    url: '#'
-                },
-                {
-                    title: 'TV',
-                    url: '#'
-                },
-                {
-                    title: 'Games',
-                    url: '#'
-                },
-                {
-                    title: 'Collectibles',
-                    url: '#'
-                },
-                {
-                    title: 'Videos',
-                    url: '#'
-                },
-                {
-                    title: 'Fans',
-                    url: '#'
-                },
-                {
-                    title: 'News',
-                    url: '#'
-                },
-                {
-                    title: 'Group',
-                    url: '#'
-                },
-            ],
-            isActive: false,
-        }
     },
     methods:{
-        makeActive: function(){
-            this.isActive = true;
-        }
     } 
 }
 </script>
@@ -85,6 +64,6 @@ a{
 
 .active{
     color: #0282F9;
-    border-block-end: 1px solid black;
+    border-block-end: 3px solid #0282F9;
 }
 </style>
