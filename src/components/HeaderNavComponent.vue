@@ -29,7 +29,7 @@
                <a href="#"> News </a>
            </li>
            <li>
-               <a href="#"> Group </a>
+               <a href="#"> Shop </a>
            </li>
        </ul>
     </div>

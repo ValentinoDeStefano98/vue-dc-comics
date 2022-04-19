@@ -1,8 +1,14 @@
 <template>
     <div class="product">
         <div class="box">
-            <img :src="src" alt="copertina">
-            <h3>{{ titolo }}</h3>
+            <div class="img-container">
+                <img :src="src" alt="copertina">
+            </div>
+            <div>
+                <h3>{{ titolo }}</h3>
+            </div>
+            
+            
         </div>
     </div>
 </template>
@@ -29,9 +35,17 @@
         .box{
             //background-color: white;
             img{
-                max-width: 100%;
+                width: 200px;
+                height: 300px;
+                
             }
         }
+    }
+
+    .img-container{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
     }
 
 </style>
