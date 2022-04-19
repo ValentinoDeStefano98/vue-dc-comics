@@ -13,6 +13,7 @@
 
     <footer>
       <FooterTop/>
+      <FooterBottom/>
     </footer>
     
   </div>
@@ -24,6 +25,7 @@ import HeaderNavComponent from './components/HeaderNavComponent.vue'
 import MainTop from './components/MainTop.vue'
 import MainBottom from './components/MainBottom.vue'
 import FooterTop from './components/FooterTop.vue'
+import FooterBottom from './components/FooterBottom.vue'
 
 export default {
   name: 'App',
@@ -33,11 +35,16 @@ export default {
    MainTop,
    MainBottom,
    FooterTop,
+   FooterBottom
   }
 }
 </script>
 
 <style lang="scss">
+
+@import './style/reset.scss';
+@import './style/mixin.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
