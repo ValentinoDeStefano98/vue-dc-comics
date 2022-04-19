@@ -4,26 +4,29 @@
             <div class="buttonContainer">
                 <span class="currentSeries">Current Series</span>
             </div>
-            
-        </div>
-        <div class="top">
-            <h2> -- Content goes here -- </h2>
-        </div>
+       </div>
+        <div class="top">          
+            <ProductSection/>          
+        </div>       
     </div>
     
 </template>
 
 <script>
+import ProductSection from '../components/ProductSection.vue'
 export default {
+    components: {
+        ProductSection
+    },
     name: 'MainTop',
 }
 </script>
 
 <style scoped lang="scss">
 .top{
+    width: 100%;
     color: white;
     background-color: black;
-    height: 100px;
     padding: 20px 0;
 }
 
