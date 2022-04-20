@@ -6,8 +6,11 @@
       :key="index"
       :src="element.thumb"
       :titolo="element.series"
-    />
+    />  
   </div>
+  <div class="loadContainer">
+        <span class="loadMore">Load more</span> 
+    </div> 
 </div>
 
 </template>
@@ -60,13 +63,13 @@
         {
             "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2019/08/BMSM_5d4361b7116261.74371456.jpg?itok=kEDR2OL8",
             "price": "$3.99",
-            "series": "Batman/Superman",
+            "series": "Batman / Superman",
             "type": "comic book"
         },
         {
             "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMSMANN_01_300-001_HD_5f5ff17fa1d665.74704970.jpg?itok=azz5sfGk",
             "price": "$4.99",
-            "series": "Batman/Superman Annual",
+            "series": "Batman / Superman Annual",
             "type": "comic book"
         },
         {
@@ -100,5 +103,27 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.loadMore{
+    display: inline-block;
+    color: white;
+    background-color: #0282F9;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.loadContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 </style>

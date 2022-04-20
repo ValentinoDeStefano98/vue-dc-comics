@@ -4,7 +4,7 @@
             <div v-for="(element, index) in menuImg" :key="index" class="container">
                 <img :src="`${element.img}`" alt="immagine">
                 <h3> {{element.title}} </h3>
-        </div>
+            </div>
         </div>
         
     </div>
@@ -61,18 +61,19 @@ export default {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .container{
-    padding: 30px 0;
+    margin: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    justify-content: space-between;
+    //justify-content: center;
+    //justify-content: space-between;
 }
 
 img{
     width: 55px;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 </style>

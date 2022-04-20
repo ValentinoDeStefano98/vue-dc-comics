@@ -7,7 +7,7 @@
        </div>
         <div class="top">          
             <ProductSection/>          
-        </div>       
+        </div>      
     </div>
     
 </template>
@@ -26,6 +26,7 @@ export default {
 .top{
     width: 100%;
     color: white;
+    text-transform: uppercase;
     background-color: black;
     padding: 20px 0;
 }
