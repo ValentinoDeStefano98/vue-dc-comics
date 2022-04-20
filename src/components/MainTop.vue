@@ -33,6 +33,8 @@ export default {
 
 .jumbo{
     background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 300px;
     text-align: start;
 }
